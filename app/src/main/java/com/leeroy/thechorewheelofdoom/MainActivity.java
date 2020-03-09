@@ -42,6 +42,22 @@ public class MainActivity extends AppCompatActivity {
                 }
 
         });
+
+        // Change all this to the greater than 10 option:
+        greaterThan10 = findViewById(R.id.than);
+        lessThan10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int lessThan10Length = lessThan10Choices.length;
+                Random random = new Random();
+                int randomNum = random.nextInt(lessThan10Length);
+                lessThan10Result = (TextView) findViewById(R.id.lessThan10Result);
+                lessThan10Result.setText(lessThan10Choices[randomNum]);
+
+
+            }
+
+        });
     }
 
 }
