@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainViewId"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A89797"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lessThan10Result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/beforeResultText"
+
+        app:layout_constraintBottom_toTopOf="@+id/above10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ageLessThan10" />
+
+    <TextView
+        android:id="@+id/ageChoiceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/age_choice_text"
+        android:textSize="30sp"
+        app:autoSizeMaxTextSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <Button
+        android:id="@+id/ageLessThan10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/less_than_10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ageChoiceText"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <Button
+        android:id="@+id/above10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/greater_than_10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ageLessThan10" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

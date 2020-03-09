@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">The Chore Chooser Of Doom</string>
+    <string name="age_choice_text">Choose Your Age:</string>
+    <string name="less_than_10"><![CDATA[<10]]></string>
+    <string name="greater_than_10"><![CDATA[>10]]></string>
+    <string name="beforeResultText">...</string>
+    <string name="sweep_mop">Sweep/Mop Floor</string>
+    <string name="do_dishes">Do the Dishes</string>
+    <string name="testResult">testasdfasdf</string>
+
+
+</resources>
